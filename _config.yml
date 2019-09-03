@@ -27,6 +27,8 @@ reveal_notes_server: false
 
 # Additional reveal.js options
 reveal_options: 
+    width: 16384
+    height: 1200
 
 # Additional reveal.js dependencies
 reveal_dependencies: 
