@@ -1,12 +1,11 @@
 
 
 <div class="studio template">
-    <div class="screen one-two-three", style="background-image: url('assets/img/one_two_three.png')">
+    <div class="screen one-two-three", style="background-image: url('assets/img/test_patterns/margins/one-two-three.png')">
     </div>
-    <div class="screen four", style="background-image: url('assets/img/four.png')">
-        <h2>Screen 4</h2>
+    <div class="screen four", style="background-image: url('assets/img/test_patterns/margins/four.png')">
     </div>
-    <div class="screen five-six-seven", style="background-image: url('assets/img/five_six_seven.png')">
+    <div class="screen five-six-seven", style="background-image: url('assets/img/test_patterns/margins/five-six-seven.png')">
         <div style="background-color: black; width: 1200px; display: inline-block; margin: 100px auto">
             <h2>Screen 5, 6 & 7</h2>
             <p><strong>You Can combine the content from projectors together too!</strong></p>
@@ -23,9 +22,9 @@
         </div>
         
     </div>
-    <div class="screen eight", style="background-image: url('assets/img/eight.png')">
+    <div class="screen eight", style="background-image: url('assets/img/test_patterns/margins/eight.png')">
     </div>
-    <div class="screen nine-ten", style="background-image: url('assets/img/nine_ten.png')">
+    <div class="screen nine-ten", style="background-image: url('assets/img/test_patterns/margins/nine-ten.png')">
     </div>
 </div>
 
