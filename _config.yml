@@ -29,6 +29,8 @@ reveal_notes_server: false
 reveal_options: 
     width: 16384
     height: 1200
+    transition: fade  # none, fade, slide, convex, concave and zoom.
+    transition_sped: slow  # default, fast, slow
 
 # Additional reveal.js dependencies
 reveal_dependencies: 
@@ -46,4 +48,6 @@ exclude:
 markdown: kramdown
 highlighter: rouge
 markdown_ext: ignoreme
+
+# You can choose from none, fade, slide, convex, concave and zoom.
 
