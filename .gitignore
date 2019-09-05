@@ -4,3 +4,9 @@ _site
 # Bundler configuration & artifacts
 .bundle/config
 Gemfile.lock
+
+.c9/
+
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
