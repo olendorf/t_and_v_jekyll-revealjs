@@ -1,6 +1,6 @@
 
 
-<div class="studio no-margin template">
+<div class="studio no-margin">
     <div class="screen one ", style="background-image: url('assets/img/test_patterns/no_margins/one.png')">
     </div>
     <div class="screen two ", style="background-image: url('assets/img/test_patterns/no_margins/two.png')">

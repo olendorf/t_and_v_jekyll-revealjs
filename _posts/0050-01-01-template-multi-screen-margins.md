@@ -6,8 +6,7 @@
     <div class="screen four", style="background-image: url('assets/img/test_patterns/margins/four.png')">
     </div>
     <div class="screen five-six-seven", style="background-image: url('assets/img/test_patterns/margins/five-six-seven.png')">
-        <div style="background-color: black; width: 1200px; display: inline-block; margin: 100px auto">
-            <h2>Screen 5, 6 & 7</h2>
+        <div style="background-color: black; width: 1200px; display: inline-block; margin: 350px auto">
             <p><strong>You Can combine the content from projectors together too!</strong></p>
             <p>The class tags work similarly with single projectors</p>
             <ul>
