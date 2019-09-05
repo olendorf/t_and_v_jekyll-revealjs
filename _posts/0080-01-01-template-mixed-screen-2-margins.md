@@ -1,11 +1,15 @@
 
 
 <div class="studio">
-    <div class="screen one-two-three", style="background-image: url('assets/img/test_patterns/margins/one-two-three.png')">
+    <div class="screen one", style="background-image: url('assets/img/test_patterns/margins/one.png')">
+    </div>
+    <div class="screen two-three", style="background-image: url('assets/img/test_patterns/margins/two-three.png')">
     </div>
     <div class="screen four", style="background-image: url('assets/img/test_patterns/margins/four.png')">
     </div>
-    <div class="screen five-six-seven", style="background-image: url('assets/img/test_patterns/margins/five-six-seven.png')">
+    <div class="screen five", style="background-image: url('assets/img/test_patterns/margins/five.png')">
+    </div>    
+    <div class="screen six-seven", style="background-image: url('assets/img/test_patterns/margins/six-seven.png')">
         <div style="background-color: black; width: 1200px; display: inline-block; margin: 350px auto">
             <p><strong>You Can combine the content from projectors together too!</strong></p>
             <p>The class tags work similarly with single projectors</p>
