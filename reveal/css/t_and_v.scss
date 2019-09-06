@@ -1,0 +1,303 @@
+---
+
+---
+
+.reveal .progress {
+    height: 20px;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Displays a boxes around the recommended content areas for the different templates.
+// add the "template" class to turn on and off
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+.template {
+    height: 1200px;
+    // padding-top: 75px;
+    // padding-left: 75px;
+    
+    &.background {
+        background-image: url('../../assets/img/TandV-black-boxes.png');
+    }
+    
+    &.background2 {
+        background-image: url('../../assets/img/template_full_size.png');
+    }
+    
+    .screen {
+        border-color: yellow;
+        border-style: solid;
+        border-width: 7px;
+        h2 {
+            color: lemonchiffon;
+            font-size: 3em;
+            // padding: 400px;
+            // opacity: 1.0;
+        }
+    }
+    
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Sets up templates for different content areas on the different walls. The classes 
+// correspond to the labels in slides 2 and three. When areases are merged the class names
+// merge accordingly so merging areas 1, 2 and 3 is one-two-three.
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+
+.studio {
+    &.no-margin {
+        padding-left: 0;
+        .screen {
+            display: inline-block;
+            float: left;
+            margin-top: 0px;
+        
+            //////////////////////////////////////////
+            //////////////////////////////////////////
+            // Set the lower limit of the screens.
+            //
+            &.one, &.two, &.three, &.four, &.eight, &.nine, &.ten,
+            &.one-two-three, &.nine-ten, &.one-two, &.two-three {
+                height: 1200px;
+            } 
+            
+            &.five, &.six, &.seven, &.five-six-seven, &.five-six, &.six-seven {
+                height: 1062px;
+            }
+            //
+            //////////////////////////////////////////
+            
+            //////////////////////////////////////////
+            //////////////////////////////////////////
+            // Set the width of the screens
+            //
+            &.one, &.two, &.three {
+                width: 1525px;
+            }
+            
+            &.one-two, &.two-three, &.five-six, &.six-seven {
+                width: 3060px;
+            }
+            
+            &.one-two-three, &.five-six-seven {
+                width: 4608px;
+            }
+            
+            &.four, &.eight {
+                width: 1900px;
+            }
+            
+            &.five, &.six, &.seven {
+                width: 1525px;
+            }
+            
+            &.nine, &.ten {
+                width: 1600px;
+            }
+            
+            &.nine-ten {
+                width: 3295px;
+            }
+            //
+            ///////////////////////////////////////
+            
+            ///////////////////////////////////////
+            ///////////////////////////////////////
+            // Adjust the margins
+            //
+            &.one, &.two, &.three, &.nine {
+                margin-right: 0;
+            } 
+            
+            &.one-two, &.two-three, &.five-six, &.six-seven {
+                margin-right: 0;
+            }
+            
+            &.one-two-three {
+                margin-right: 0;
+            }
+            
+            &.four {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            
+            &.five, &.six, &.seven {
+                margin-right: 0;
+            }
+            
+            &.five-six-seven {
+                margin-right: 0;
+            }
+        
+            &.eight {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            
+            &.ten {
+                margin-right: 0;
+            }
+            //
+            /////////////////////////////////////
+        }
+    }
+    padding-left: 75px;
+    .screen {
+        display: inline-block;
+        float: left;
+        margin-top: 75px;
+        
+        
+        // Set up the display style
+        &.one, &.two, &.three, &.four, 
+        &.four, &.five, &.six, &.seven,
+        &.eight, &.nine, &.ten, &.one-two-three,
+        &.five-six-seven, &.nine-ten{
+            float: left;
+        } 
+        
+        //////////////////////////////////////////
+        //////////////////////////////////////////
+        // Set the lower limit of the screens.
+        //
+        &.one, &.two, &.three, &.four, &.eight, &.nine, &.ten,
+        &.one-two-three, &.nine-ten, &.one-two, &.two-three {
+            height: 1056px;
+        } 
+        
+        &.five, &.six, &.seven, &.five-six-seven, &.five-six, &.six-seven {
+            height: 948px;
+        }
+        //
+        //////////////////////////////////////////
+        
+        //////////////////////////////////////////
+        //////////////////////////////////////////
+        // Set the width of the screens
+        //
+        &.one, &.two, &.three {
+            width: 1426px;
+        }
+        
+        &.one-two, &.five-six, &.two-three, &.six-seven {
+            width: 2925px;
+        }
+        
+        &.one-two-three {
+            width: 4410px;
+        }
+        
+        &.four, &.eight {
+            width: 1725px;
+        }
+        
+        &.five, &.six, &.seven {
+            width: 1400px;
+        }
+        
+        &.five-six-seven {
+            width: 4400px;
+        }
+        
+        &.nine {
+            width: 1565px;
+        }
+        
+        &.ten {
+            width: 1525px;
+        }
+        
+        &.nine-ten {
+            width: 3160px;
+        }
+        //
+        ///////////////////////////////////////
+        
+        
+        ///////////////////////////////////////
+        ///////////////////////////////////////
+        // Adjust the margins
+        //
+        &.one, &.two, &.three, &.nine, &.one-two, &.five-six, &.two-three, &.six-seven {
+            margin-right: 55px;
+        } 
+        
+        &.one-two-three {
+            margin-right: 65px;
+        }
+        
+        &.four {
+            margin-left: 185px;
+            margin-right: 185px;
+        }
+        
+        &.five, &.six, &.seven {
+            margin-right: 87px;
+        }
+        
+        &.five-six-seven {
+            margin-right: 75px;
+        }
+    
+        &.eight {
+            margin-left: 75px;
+            margin-right: 155px;
+        }
+        
+        &.ten {
+            margin-right: 0;
+        }
+        //
+        /////////////////////////////////////
+    }
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Formatting and styling
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+
+.reveal {
+    .screen pre code {
+        max-height: 700px;
+    }
+    
+    .screen .img img {
+        max-height: 100%;
+    }
+    
+    .screen .row {
+        padding: 50px 50px;
+        .column {
+        
+            &.two {
+                max-width: 700px;
+                  margin: 0;
+            }
+            
+            &.right {
+                float: right;
+                
+            }
+            
+            &.left {
+                float: left;
+                
+            }
+        }
+    }
+}
