@@ -36,7 +36,7 @@ reveal_options:
 reveal_dependencies: 
 
 # Reveal.js subdirectory
-reveal_path: reveal/
+reveal_path: reveal_test/
 
 # Exclude directories and/or files from the conversion
 exclude:

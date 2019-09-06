@@ -1,6 +1,8 @@
-# jekyll-reveal.js
+# Teaching and Vizualization Studio Jekyll/Reveal.js Slide Framework
 
-A Jekyll-based framework for creating presentations based on Reveal.js and Markdown.
+This is a port of the Jekyll-based framework for creating presentations based on Reveal.js and Markdown called [Jekyll-revealjs](https://github.com/dploeger/jekyll-reveal.js). This port 
+makes a few changes to Jekyll-Reveal to facilitate creating presentations for the Teaching and Vizualization Studio, but otherwise is the same. The documenation here likeiwse is mostly borrowed
+from Jekyll-Reveal with changes as needed. It is recommended you visit [Reveal.js](https://github.com/hakimel/reveal.js/) for their excellent documentation on the Reveal slides framework. 
 
 - [Introduction](#introduction)
 - [Howto](#howto)
@@ -17,9 +19,10 @@ A Jekyll-based framework for creating presentations based on Reveal.js and Markd
 
 ## Introduction
 
-If you like [Reveal.js][] for creating your online presentations, like the site management [Jekyll][] gives you and like [Markdown][] because of its easy and clean look, here's an easy way to create a presentation using Jekyll, Markdown and Reveal.js.
+If you like [Reveal.js](https://github.com/hakimel/reveal.js/) for creating your online presentations, like the site management [Jekyll](https://jekyllrb.com/) gives you and like 
+[Markdown](https://guides.github.com/features/mastering-markdown/) because of its easy and clean look, here's an easy way to create a presentation using Jekyll, Markdown and Reveal.js.
 
-See the [example presentation][] created using the contents in this repository and `jekyll build` or `docker-compose up`.
+See the [example presentation](https://olendorf.github.io/t_and_v_jekyll-revealjs/) created using the contents in this repository.
 
 ## Howto
 
