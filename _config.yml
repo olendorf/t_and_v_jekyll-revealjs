@@ -1,8 +1,8 @@
 # Your presentation title
-title: Jekyll and Reveal.js
+title: Teaching and Viz Jekyll and Reveal.js
 
 # Your presentation description (optional)
-description: A framework for easily creating beautiful presentations using HTML
+description: A framework for easily creating beautiful presentations using HTML that fits NCSU Libraries Teaching and Vizualization Studio
 
 # Your name (optional)
 author: jekyll-revealjs contributors
@@ -14,7 +14,7 @@ reveal_theme: black.css
 reveal_transition: default
 
 # Path to the used theme (defaults to the Reveal.js standard theme path)
-reveal_theme_path: reveal.js/css/theme/ 
+reveal_theme_path: reveal/css/theme/ 
 
 # Additional custom CSS paths
 extra_css: 
@@ -27,8 +27,8 @@ reveal_notes_server: false
 
 # Additional reveal.js options
 reveal_options: 
-    width: 16384
-    height: 1200
+    width: 16384   # Change this to fit the entire studio only if its off
+    height: 1200   # Same as width.
     transition: fade  # none, fade, slide, convex, concave and zoom.
     transition_sped: slow  # default, fast, slow
 

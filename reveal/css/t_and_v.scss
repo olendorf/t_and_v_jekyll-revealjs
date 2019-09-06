@@ -43,6 +43,8 @@
     
 }
 
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -66,7 +68,7 @@
             // Set the lower limit of the screens.
             //
             &.one, &.two, &.three, &.four, &.eight, &.nine, &.ten,
-            &.one-two-three, &.nine-ten, &.one-two, &.two-three {
+            &.one-two-three, &.nine-ten, &.one-two, &.two-three, &.panoramic {
                 height: 1200px;
             } 
             
@@ -106,6 +108,10 @@
             
             &.nine-ten {
                 width: 3295px;
+            }
+            
+            &.panoramic {
+                width: 16384px;
             }
             //
             ///////////////////////////////////////
@@ -162,7 +168,7 @@
         &.one, &.two, &.three, &.four, 
         &.four, &.five, &.six, &.seven,
         &.eight, &.nine, &.ten, &.one-two-three,
-        &.five-six-seven, &.nine-ten{
+        &.five-six-seven, &.nine-ten, &.panoramic {
             float: left;
         } 
         
@@ -171,7 +177,7 @@
         // Set the lower limit of the screens.
         //
         &.one, &.two, &.three, &.four, &.eight, &.nine, &.ten,
-        &.one-two-three, &.nine-ten, &.one-two, &.two-three {
+        &.one-two-three, &.nine-ten, &.one-two, &.two-three, &.panoramic {
             height: 1056px;
         } 
         
@@ -219,6 +225,10 @@
         
         &.nine-ten {
             width: 3160px;
+        }
+        
+        &.panoramic {
+            width: 16234px;
         }
         //
         ///////////////////////////////////////
