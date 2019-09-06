@@ -24,31 +24,36 @@ If you like [Reveal.js](https://github.com/hakimel/reveal.js/) for creating your
 
 See the [example presentation](https://olendorf.github.io/t_and_v_jekyll-revealjs/) created using the contents in this repository.
 
-## Howto
+## Getting Started
 
-First, [install Jekyll][]. After that, clone this repository and create a branch for your new presentation:
+While you can **_Fork_** this repository or create a copy using **_Use this template_** and edit the files there, this can be very cumbersome in the long run. The steps below
+will allow you to create a copy on your local machine and use your favorite editor or IDE to create your presentation.
 
-    git clone --recursive https://github.com/dploeger/jekyll-revealjs.git
-    git checkout -b presentation1
 
-Clean the Example presentation:
+Clone this repository and create a branch for your new presentation:
 
-    git rm _posts/*
-    mkdir _posts
+    git clone --recursive https://github.com/olendorf/t_and_v_jekyll-revealjs.git
 
-After that, add your slides into the `_posts` subdirectory in clean Markdown syntax and you're ready to build your presentation with Jekyll:
+or 
 
-    jekyll build
+    git clone --recursive <your repo's URL>
 
-If you don’t have Jekyll installed (but you do have Docker) then you can just run the following to build and serve your changes using a container. Hit `ctrl-c` to stop the process.
+Copy the Example presentation:
 
-     docker-compose up
+     mv _posts _templates
+     mkdir _posts
+     
 
-You can even manage multiple presentations using the power of Git. Simply branch from the master branch to create a new presentation:
+After that, add your slides into the `_posts` subdirectory. You can use the examples in the new `_templates` folder to help too. Now install the needed dependencies
+    
+    gem install bundler
+    bundle install
+    
+If all is working you can start the server local now 
 
-    git checkout master
-    git branch presentation2
-    git checkout presentation2
+    jekyll serve --host $IP --port $PORT
+
+
 
 ## Slide filenames
 
@@ -58,12 +63,12 @@ Because we're using Jekyll [posts][] to easily gather the slides for the present
 
 We recommend naming the files like
 
-    0000-01-01-welcome.md
-    0000-01-02-topics.md
+    0010-01-01-welcome.md
+    0020-01-01-topics.md
 
-and so forth.
-
-Jekyll will assume that each post has been made on the first of January, 2001 (which is of no interest for a presentation). The additional number is for sorting purposes. After that comes a title to identify the specific slide (which is actually only for the presentation author, Jekyll doesn't care about it).
+and so forth. The dates need to be valid but the actual date doesn't matter for our purposes. The convention used here of `0010-01-01` then
+`0020-01-01` allows you to easily move slide order by rename just some of the slides. If you number them without gaps you could find yourself
+doing a lot of renaming.
 
 ## Configuring the presentation
 
@@ -72,9 +77,9 @@ You can configure almost any reveal.js setting using the `_config.yml` settings 
 - `title`: The title of your presentation (displayed in the browser's title bar, optional and defaults to your repository’s name thanks to the `jekyll-github-metadata` plugin)
 - `description`: A description for your presentation (displayed in the HTML head, optional and defaults to your repository’s description thanks to the `jekyll-github-metadata` plugin)
 - `author`: Your name (displayed in the HTML head)
-- `reveal_theme`: The reveal.js-theme to use [default.css]
+- `reveal_theme`: The reveal.js-theme to use [black.css]
 - `reveal_transition`: The reveal.js-transition to use [default]
-- `reveal_theme_path`: The path to the reveal.js-theme (can be changed for custom themes) [reveal.js/css/theme/]
+- `reveal_theme_path`: The path to the reveal.js-theme (can be changed for custom themes) [css/theme/]
 - `reveal_notes_server`: Whether to support the speaker notes server [false (only local speaker notes)]
 - `reveal_options`: Additional reveal.js [options][]
 
@@ -114,11 +119,24 @@ reveal_dependencies:
   - "{ src: 'path/to/plugin.js', async: true },"
 ```
 
-## Custom reveal.js themes
+## Custom themes 
 
-If you want to use your custom reveal.js theme, we recommend adding a directory `theme`, putting the file(s) there and referencing that directory in the configuration `reveal_theme_path`.
+The Teaching and Viz port uses its own folder for style sheets `css/` and ignores any CSS in the reveal directory. If you want to add your own CSS
+we recommend adding a new file in the `css/theme` directory. You can use either .css or .scss. If you use SCSS you must add the following to the first three 
+lines of your file.
 
-Don't mess with the `reveal.js` subdirectory as it is a submodule and doesn't adhere to your repository's branches.
+    ---
+    
+    ---
+    
+    
+Then edit `_config.yml` to use that theme
+
+    # The Reveal theme
+    reveal_theme: your_theme.scss
+    
+    
+
 
 ## Markdown extensions and simplification
 
@@ -153,6 +171,7 @@ This is the content of Slide 1
 
 And this is a vertical slide below Slide 1
 ```
+
 
 ### Fragments
 
