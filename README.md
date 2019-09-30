@@ -5,7 +5,7 @@ makes a few changes to Jekyll-Reveal to facilitate creating presentations for th
 from Jekyll-Reveal with changes as needed. It is recommended you visit [Reveal.js](https://github.com/hakimel/reveal.js/) for their excellent documentation on the Reveal slides framework. 
 
 - [Introduction](#introduction)
-- [Howto](#howto)
+- [Getting started](#getting-started)
 - [Slide filenames](#slide-filenames)
 - [Configuring the presentation](#configuring-the-presentation)
   - [Specifying reveal options and dependencies](#specifying-reveal-options-and-dependencies)
