@@ -1,7 +1,7 @@
 # Teaching and Vizualization Studio Jekyll/Reveal.js Slide Framework
 
 This is a port of the Jekyll-based framework for creating presentations based on Reveal.js and Markdown called [Jekyll-revealjs](https://github.com/dploeger/jekyll-reveal.js). This port 
-makes a few changes to Jekyll-Reveal to facilitate creating presentations for the Teaching and Vizualization Studio, but otherwise is the same. The documenation here likeiwse is mostly borrowed
+makes a few changes to Jekyll-Reveal to facilitate creating presentations for the Teaching and Vizualization Studio, but otherwise is the same. The documenation here likewise is mostly borrowed
 from Jekyll-Reveal with changes as needed. It is recommended you visit [Reveal.js](https://github.com/hakimel/reveal.js/) for their excellent documentation on the Reveal slides framework. 
 
 - [Introduction](#introduction)
